@@ -1,0 +1,11 @@
+:root{
+    --primary-color: #08c1b8;
+}
+
+body{
+    position: relative;
+}
+
+.main-containt{
+    position: relative;
+}
