@@ -53,3 +53,46 @@
 .nav-element:hover {
   background-size: 0 5px, 100% 5px;
 }
+
+.nav-element:has(.sub-nav)::after{
+  content: " \25BE";
+}
+
+.nav-element:has(.sub-nav):hover > .sub-nav{
+  display: block;
+}
+
+.sub-nav{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-800);
+  color: var(--clr-100);
+}
+
+.sub-nav > .nav-element{
+  background: linear-gradient(
+      to right,
+      var(--clr-800),
+      var(--clr-800)
+    ),
+    linear-gradient(
+      to right,
+      var(--secondary-color),
+      var(--secondary-color)
+    );
+  background-size: 100% 5px, 0 5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.sub-nav > .nav-element:hover{
+  background-size: 0 5px, 100% 5px;
+}
+
+/* .sub-nav > .nav-element > .sub-nav {
+  left: 100%;
+} */

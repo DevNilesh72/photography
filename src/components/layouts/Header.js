@@ -10,10 +10,21 @@ export default function Header() {
         <ul className="header-nav">
           <li className="nav-element">Home</li>
           <li className="nav-element">About</li>
-          <li className="nav-element">Portfolio</li>
+          <li className="nav-element">
+            Portfolio
+            <ul className="sub-nav">
+              <li className="nav-element">Albums</li>
+              <li className="nav-element">Gallery</li>
+              <li className="nav-element">
+                Category
+                <ul className="sub-nav">
+                  <li className="nav-element">Albums</li>
+                  <li className="nav-element">Albums</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li className="nav-element">Contact</li>
-          <li className="nav-element">Home</li>
-          <li className="nav-element">About</li>
           <li className="primary-cta">Button</li>
         </ul>
       </section>
