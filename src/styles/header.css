@@ -65,11 +65,16 @@
 .sub-nav{
   display: none;
   position: absolute;
+  font-size: .9rem;
   top: 100%;
   left: 0;
   right: 0;
   background-color: var(--clr-800);
   color: var(--clr-100);
+}
+
+.sub-nav > .nav-element:has(.sub-nav)::after{
+  content: " \25B8";
 }
 
 .sub-nav > .nav-element{
@@ -93,6 +98,8 @@
   background-size: 0 5px, 100% 5px;
 }
 
-/* .sub-nav > .nav-element > .sub-nav {
+.sub-nav > .nav-element > .sub-nav {
+  right: -100%;
   left: 100%;
-} */
+  top: 0;
+}
