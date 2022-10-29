@@ -11,6 +11,8 @@
   --clr-700: #848484;
   --clr-800: #333;
   --clr-900: #222;
+
+  --header-height: 4em;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
@@ -98,4 +100,8 @@ svg {
   padding: 0.6em 1em;
   background-color: var(--secondary-color);
   color: var(--clr-100);
+}
+
+.main-content {
+  margin-top: var(--header-height);
 }
