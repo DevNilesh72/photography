@@ -7,17 +7,17 @@
 }
 
 .header > .container{
+  --header-height: 4em;
   font-size: 1rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  height: var(--header-height);
 }
 
 .logo {
   height: 50px;
-  margin-block: 1em;
 }
 
 .header-nav {
@@ -26,13 +26,18 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1.2em;
+  gap: 3em;
 }
 
 .nav-element {
+  --border-bottom-size: .3em;
   position: relative;
-  display: block;
-  padding: 1em;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-inline: .4em;
   cursor: pointer;
   background: linear-gradient(
       to right,
@@ -44,14 +49,14 @@
       var(--secondary-color),
       var(--secondary-color)
     );
-  background-size: 100% 5px, 0 5px;
+  background-size: 100% var(--border-bottom-size), 0 var(--border-bottom-size);
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
 
 .nav-element:hover {
-  background-size: 0 5px, 100% 5px;
+  background-size: 0 var(--border-bottom-size), 100% var(--border-bottom-size);
 }
 
 .nav-element:has(.sub-nav)::after{
@@ -78,6 +83,7 @@
 }
 
 .sub-nav > .nav-element{
+  height: var(--header-height);
   background: linear-gradient(
       to right,
       var(--clr-800),
@@ -88,14 +94,14 @@
       var(--secondary-color),
       var(--secondary-color)
     );
-  background-size: 100% 5px, 0 5px;
+  background-size: 100% var(--border-bottom-size), 0 var(--border-bottom-size);
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
 
 .sub-nav > .nav-element:hover{
-  background-size: 0 5px, 100% 5px;
+  background-size: 0 var(--border-bottom-size), 100% var(--border-bottom-size);
 }
 
 .sub-nav > .nav-element > .sub-nav {

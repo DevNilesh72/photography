@@ -19,7 +19,7 @@ export default function Header() {
                 Category
                 <ul className="sub-nav">
                   <li className="nav-element">Weddings</li>
-                  <li className="nav-element">Fliems</li>
+                  <li className="nav-element">Flims</li>
                   <li className="nav-element">Sports</li>
                   <li className="nav-element">Outdoor</li>
                 </ul>
