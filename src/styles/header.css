@@ -4,6 +4,8 @@
   left: 0;
   right: 0;
   border-bottom: 1px solid var(--clr-900);
+  background-color: var(--clr-100);
+  z-index: 999;
 }
 
 .header > .container{
