@@ -1,10 +1,12 @@
 import React from "react";
-import Banner from "./carousel";
+import About from "./About";
+import Banner from "./Banner";
 
 export default function Home() {
   return (
     <div className="main-content">
       <Banner />
+      <About />
     </div>
   );
 }

@@ -74,6 +74,20 @@ svg {
   display: block;
 }
 
+strong{
+  font-weight: 600;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--clr-100);
+  background: var(--secondary-color);
+}
+
+::selection {
+  color: var(--clr-100);
+  background: var(--secondary-color);
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -99,6 +113,16 @@ svg {
   cursor: pointer;
   padding: 0.6em 1em;
   background-color: var(--secondary-color);
+  color: var(--clr-100);
+  outline: none;
+  border: 0;
+}
+
+.secondary-cta {
+  display: block;
+  cursor: pointer;
+  padding: 0.6em 1em;
+  background-color: var(--clr-900);
   color: var(--clr-100);
   outline: none;
   border: 0;

@@ -1,10 +1,4 @@
-.carousel{
-    width: 1520px;
-    height: 360px;
-    position: relative;
-    border: 1px solid red;
-}
-
+/* banner css */
 .left-btn, .right-btn {
     position: absolute;
     z-index: 100;
@@ -25,7 +19,7 @@
     right: 10%;
 }
 
-.carousel-indecator {
+.carousel-indicator {
     display: inline-block;
     height: 15px;
     width: 5px;
@@ -34,7 +28,59 @@
     transition: height 400ms ease-in-out;
 }
 
-.carousel-indecator.selected {
+.carousel-indicator.selected {
     background-color: var(--secondary-color);
     height: 20px;
+}
+
+/* about me css */
+
+.about-me {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* margin-block: 4em; */
+    height: 400px;
+}
+
+.column-left {
+    background-image: url('/public/images/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.column-right {
+    background-image: url('/public/images/bg-pattern-1-dark.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10%;
+}
+
+.column-right > .primary-heading{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--clr-900);
+}
+
+.column-right > .secondary-heading{
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--clr-500);
+}
+
+.column-right > .divider {
+    width: 45px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    margin-block: 1em;
+}
+
+.column-right > .content {
+    margin-top: 2em;
+}
+
+.column-right > .btn-container {
+    margin-top: 2em;
+    display: flex;
+    gap: .3em;
 }
