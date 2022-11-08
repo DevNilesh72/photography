@@ -7,7 +7,7 @@ export default function About() {
       <div className="column-right">
         <h1 className="primary-heading">About</h1>
         <h2 className="secondary-heading">Who I am and what I do</h2>
-        <hr className="divider" />
+        <hr className="heading-divider" />
         <p className="content">
           Hi, my name is <strong>Martin Vegas</strong>. I am an artist and
           photographer. Nemo enim ipsam voluptatem quia voluptas aspernatur aut

@@ -54,8 +54,8 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -74,11 +74,12 @@ svg {
   display: block;
 }
 
-strong{
+strong {
   font-weight: 600;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: var(--clr-100);
   background: var(--secondary-color);
 }
@@ -104,7 +105,7 @@ strong{
   }
 }
 
-.container{
+.container {
   padding-inline: 4em;
 }
 
@@ -140,4 +141,24 @@ strong{
 
 .main-content {
   margin-top: var(--header-height);
+}
+
+.primary-heading{
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--clr-900);
+}
+
+.secondary-heading{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--clr-500);
+}
+
+.heading-divider {
+  width: 45px;
+  height: 5px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin-block: 1em;
 }

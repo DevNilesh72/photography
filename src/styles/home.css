@@ -38,7 +38,7 @@
 .about-me {
     display: grid;
     grid-template-columns: 40% 60%;
-    /* margin-block: 4em; */
+    margin-top: 4em;
     height: 400px;
 }
 
@@ -55,26 +55,6 @@
     padding: 10%;
 }
 
-.column-right > .primary-heading{
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--clr-900);
-}
-
-.column-right > .secondary-heading{
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--clr-500);
-}
-
-.column-right > .divider {
-    width: 45px;
-    height: 5px;
-    background-color: var(--secondary-color);
-    border: none;
-    margin-block: 1em;
-}
-
 .column-right > .content {
     margin-top: 2em;
 }
@@ -83,4 +63,32 @@
     margin-top: 2em;
     display: flex;
     gap: .3em;
+}
+
+/* Gallery */
+
+.gallery{
+    margin-top: 8em;
+}
+
+.gallery-heading {
+    padding-inline: 40%;
+    margin-inline: auto;
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.content-item {
+    border: 1px solid red;
+    width: 370px;
+    height: 260px;
+}
+
+.content-item > img {
+    object-fit: cover;
+    width: 370px;
+    height: 260px;
 }
